@@ -1,0 +1,157 @@
+/* 
+Cores Utilizadas no Projeto
+
+- Background Top Header: #162028
+
+- Cor do texto no menu: #425564
+
+- Cor dos textos: #555
+
+- Cor de fundo do box com imagem de detalhe: #003d52
+
+- Cor de fundo do footer: #0b171f
+
+- Cor de texto do footer: #6f8597
+*/
+
+/* Fontes do Projeto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* Padrão CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Váriáveis do CSS */
+:root {
+    --margin: 1.25em auto;
+    --bg-topheader: #162028;
+    --color-txtmenu: #425564;
+    --color-alltxt: #555;
+    --bg-imgdetail: #003d52;
+    --bg-footer: #0b171f;
+    --color-txtfooter: #6f8597;
+}
+
+/* Div - Container Principal */
+#main-container {
+    margin: var(--margin);
+    width: 64em;
+    color: var(--color-alltxt);
+}
+
+/* Header - Logo & Nav-Bar */
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-topheader);
+    padding: 0.25em;
+}
+
+#logo {
+    color: white;
+    font-weight: bold;
+    font-size: 2.25em;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-shadow: 4px 4px 6px black;
+    margin-left: 4em;
+}
+
+#nav-bar {
+    margin-right: 2em;
+}
+
+.nav-bar__list {
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+}
+
+.nav-bar__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: var(--color-txtmenu);
+}
+
+.nav-bar__link:hover {
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+
+/* Main - Article Top & Cards */
+#article-top {
+    padding: 0 7em 4em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.article-top__title {
+    font-size: 2em;
+    margin: 1em 0;
+}
+
+.article-top__desc {
+    line-height: 2;
+}
+
+#section-cards {
+    padding: 0 7em 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-card {
+    text-align: center;
+    font-weight: bold;
+}
+
+.div-card__title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0.5em;
+}
+
+/* Main - Article Bot e Background */
+#article-bot {
+    padding: 7em;
+    color: white;
+    text-align: left;
+    background-color: var(--bg-imgdetail);
+    background-image: url(../images/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.article-bot__title {
+    font-size: 2.25em;
+    line-height: 1.25;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+}
+
+.article-bot__desc {
+    line-height: 1.5;
+    width: 70%;
+}
+
+/* Footer */
+#footer {
+    background-color: var(--bg-footer);
+    color: white;
+    padding: 1em;
+    text-align: center;
+    font-size: 0.75em;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 4px black;
+    font-weight: bold;
+}
